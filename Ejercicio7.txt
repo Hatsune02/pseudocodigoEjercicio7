@@ -1,0 +1,27 @@
+Algoritmo Ejercicio7
+	numeroRuleta <- 0
+	pares <- 0
+	impares <- 0
+	ceros <- 0
+	Para i<-1 Hasta 15 Hacer
+		numeroRuleta <- azar(36)
+		Escribir numeroRuleta
+		Mientras (numeroRuleta>2) Hacer
+			numeroRuleta <- numeroRuleta-2
+		FinMientras
+		Si (numeroRuleta=2) Entonces
+			pares <- pares+1
+		FinSi
+		Si (numeroRuleta=1) Entonces
+			impares <- impares+1
+		FinSi
+		Si (numeroRuleta=0) Entonces
+			ceros <- ceros+1
+		FinSi
+	FinPara
+	PorcentajePares <- pares*100/15
+	PorcentajeImpares <- impares*100/15
+	PorcentajeCeros <- ceros*100/15
+	Escribir pares,' ',impares,' ',ceros
+	Escribir 'El porcentaje de números pares es de ',PorcentajePares,'%, el porcentade de números impares es de ',PorcentajeImpares,'% y el porcentaje de ceros es de ',PorcentajeCeros,'%'
+FinAlgoritmo
